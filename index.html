@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="banner">
+      <img class="layer-1 sky" src="/assets/sky.png" />
+      <img class="layer-2 moon" src="/assets/moon.png" />
+      <img class="layer-3 cloud" src="/assets/cloud.png" />
+
+      <div class="layer-4">
+        <h2>
+          Discover a new Journey with <strong>Senja</strong>, <br />
+          we give best experience for our customer
+        </h2>
+        <button><a href="#teks"></a> book now</button>
+      </div>
+
+      <img class="layer-5" src="/assets/bg1.png" />
+      <img class="layer-6" src="/assets/bg2.png" />
+      <img class="layer-7" src="/assets/bg3.png" />
+      <img class="layer-8" src="/assets/bg4.png" />
+      <img class="layer-9" src="/assets/bg5.png" />
+    </div>
+
+    <section>
+      <div class="content" id="teks">
+        <h1>Gallery</h1>
+        <p>enjoy the relaxing view with a cup of coffee</p>
+        <div class="gallery">
+          <img src="/assets/galleri-1.png" />
+          <img src="/assets/galleri-2.png" />
+          <img src="/assets/galleri-3.png" />
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      let layer_1 = document.querySelector(".layer-1");
+      let layer_2 = document.querySelector(".layer-2");
+      let layer_3 = document.querySelector(".layer-3");
+      let layer_4 = document.querySelector(".layer-4");
+      let layer_5 = document.querySelector(".layer-5");
+      let layer_6 = document.querySelector(".layer-6");
+      let layer_7 = document.querySelector(".layer-7");
+      let layer_8 = document.querySelector(".layer-8");
+      let layer_9 = document.querySelector(".layer-9");
+
+      window.onscroll = function () {
+        let Y = window.scrollY;
+
+        // layer_1.style.transform = "translateY(" + Y / 2 + "px)";
+        layer_2.style.transform = "translateY(" + Y / 1 + "px)";
+        layer_3.style.transform = "translateY(" + Y / 0.9 + "px)";
+        layer_4.style.transform = "translateY(" + Y / 1.5 + "px)";
+        layer_4.style.opacity = 1 - Y / 500;
+        layer_5.style.transform = "translateY(" + Y / 1.6 + "px)";
+        layer_6.style.transform = "translateY(" + Y / 1.7 + "px)";
+        layer_7.style.transform = "translateY(" + Y / 1.5 + "px)";
+        layer_8.style.transform = "translateY(" + Y / 1.2 + "px)";
+        layer_9.style.transform = "translateY(" + Y / -3000 + "px)";
+        // layer_9.style.transform = "scale(" + Y / 600 + ")";
+      };
+    </script>
+  </body>
+</html>
